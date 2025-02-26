@@ -1,0 +1,205 @@
+Migrating kigen.local
+Traceback with variables (most recent call last):
+  File "/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+      mod_name = 'frappe.utils.bench_helper'
+      alter_argv = True
+      mod_spec = ModuleSpec(name='frappe.utils.bench_helper', loader=<_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>, origin='/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py')
+      code = <code object <module> at 0x10ce0b470, file "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 1>
+      main_globals = {'__name__': '__main__', '__doc__': None, '__package__': 'frappe.utils', '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>, '__spec__': ModuleSpec(name='frappe.utils.bench_helper', loader=<_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>, origin='/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py'), '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': '/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py', '__cached__': '/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/__pycache__/bench_helper.cpython-310.pyc', 'importlib': <module 'importlib' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py'>, 'json': <module 'json' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py'>, 'os':...
+  File "/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+      code = <code object <module> at 0x10ce0b470, file "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 1>
+      run_globals = {'__name__': '__main__', '__doc__': None, '__package__': 'frappe.utils', '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>, '__spec__': ModuleSpec(name='frappe.utils.bench_helper', loader=<_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>, origin='/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py'), '__annotations__': {}, '__builtins__': <module 'builtins' (built-in)>, '__file__': '/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py', '__cached__': '/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/__pycache__/bench_helper.cpython-310.pyc', 'importlib': <module 'importlib' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py'>, 'json': <module 'json' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/json/__init__.py'>, 'os':...
+      init_globals = None
+      mod_name = '__main__'
+      mod_spec = ModuleSpec(name='frappe.utils.bench_helper', loader=<_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>, origin='/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py')
+      pkg_name = 'frappe.utils'
+      script_name = None
+      loader = <_frozen_importlib_external.SourceFileLoader object at 0x10aa47fa0>
+      fname = '/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py'
+      cached = '/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/__pycache__/bench_helper.cpython-310.pyc'
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 109, in <module>
+    main()
+      ...skipped... 25 vars
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/utils/bench_helper.py", line 18, in main
+    click.Group(commands=commands)(prog_name="bench")
+      commands = {'frappe': <Group frappe>, 'get-frappe-commands': <Command get-frappe-commands>, 'get-frappe-help': <Command get-frappe-help>}
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+      self = <Group None>
+      args = ()
+      kwargs = {'prog_name': 'bench'}
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+      self = <Group None>
+      args = ['frappe', '--site', 'kigen.local', 'migrate']
+      prog_name = 'bench'
+      complete_var = None
+      standalone_mode = True
+      extra = {}
+      ctx = <click.core.Context object at 0x10ce1e410>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+      _process_result = <function MultiCommand.invoke.<locals>._process_result at 0x10ce2a560>
+      args = ['migrate']
+      cmd_name = 'frappe'
+      cmd = <Group frappe>
+      sub_ctx = <click.core.Context object at 0x10ce1e5c0>
+      ctx = <click.core.Context object at 0x10ce1e410>
+      self = <Group None>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+      _process_result = <function MultiCommand.invoke.<locals>._process_result at 0x10cec6200>
+      args = []
+      cmd_name = 'migrate'
+      cmd = <Command migrate>
+      sub_ctx = <click.core.Context object at 0x10cebf100>
+      ctx = <click.core.Context object at 0x10ce1e5c0>
+      self = <Group frappe>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+      self = <Command migrate>
+      ctx = <click.core.Context object at 0x10cebf100>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+      args = ()
+      kwargs = {'skip_failing': False, 'skip_search_index': False}
+      self = <click.core.Context object at 0x10cebf100>
+      callback = <function migrate at 0x10ce6e4d0>
+      ctx = <click.core.Context object at 0x10cebf100>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/click/decorators.py", line 21, in new_func
+    return f(get_current_context(), *args, **kwargs)
+      args = ()
+      kwargs = {'skip_failing': False, 'skip_search_index': False}
+      f = <function migrate at 0x10ce6e290>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/commands/__init__.py", line 29, in _func
+    ret = f(frappe._dict(ctx.obj), *args, **kwargs)
+      ctx = <click.core.Context object at 0x10cebf100>
+      args = ()
+      kwargs = {'skip_failing': False, 'skip_search_index': False}
+      profile = False
+      f = <function migrate at 0x10ce6e200>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/commands/site.py", line 677, in migrate
+    SiteMigration(
+      context = {'sites': ['kigen.local'], 'force': False, 'verbose': False, 'profile': False}
+      skip_failing = False
+      skip_search_index = False
+      activate_by_import = <module 'traceback_with_variables.activate_by_import' from '/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/traceback_with_variables/activate_by_import.py'>
+      SiteMigration = <class 'frappe.migrate.SiteMigration'>
+      site = 'kigen.local'
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/migrate.py", line 182, in run
+    self.run_schema_updates()
+      self = <frappe.migrate.SiteMigration object at 0x10cebf400>
+      site = 'kigen.local'
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/migrate.py", line 52, in wrapper
+    raise e
+      args = (<frappe.migrate.SiteMigration object at 0x10cebf400>,)
+      kwargs = {}
+      method = <function SiteMigration.run_schema_updates at 0x10f670280>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/migrate.py", line 44, in wrapper
+    ret = method(*args, **kwargs)
+      args = (<frappe.migrate.SiteMigration object at 0x10cebf400>,)
+      kwargs = {}
+      method = <function SiteMigration.run_schema_updates at 0x10f670280>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/migrate.py", line 117, in run_schema_updates
+    frappe.modules.patch_handler.run_all(
+      self = <frappe.migrate.SiteMigration object at 0x10cebf400>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/modules/patch_handler.py", line 76, in run_all
+    run_patch(patch)
+      patch_type = <PatchType.pre_model_sync: 'pre_model_sync'>
+      executed = {"execute:frappe.rename_doc('Country', 'Syrian Arab Republic', 'Syria', ignore_if_exists=True)", 'frappe.patches.v15_0.set_file_type', 'frappe.patches.v10_0.modify_smallest_currency_fraction', "execute:frappe.reload_doc('core', 'doctype', 'custom_docperm')", 'frappe.patches.v13_0.replace_old_data_import # 2020-06-24', 'execute:frappe.permissions.reset_perms("Error Snapshot")', 'execute:frappe.db.set_single_value("Document Naming Settings", "default_amend_naming", "Amend Counter")', "execute:frappe.delete_doc_if_exists('DocType', 'GSuite Settings')", 'execute:frappe.db.sql("delete from `tabWeb Page` where ifnull(template_path, \'\')!=\'\'")', 'frappe.patches.v15_0.migrate_role_profile_to_table_multi_select', 'frappe.patches.v15_0.set_contact_full_name', 'frappe.patches.v11_0.change_email_signature_fieldtype', "execute:frappe.db.set_default('desktop:home_page', 'workspace')", 'frappe.patches.v11_0.rename_email_alert_to_notification #13-06-2018', 'frappe.patches.v14_0.set_document_expiry_...
+      run_patch = <function run_all.<locals>.run_patch at 0x10fa285e0>
+      patches = ['frappe.patches.v12_0.remove_deprecated_fields_from_doctype #3', 'execute:frappe.utils.global_search.setup_global_search_table()', "execute:frappe.reload_doc('core', 'doctype', 'doctype_action', force=True) #2019-09-23", "execute:frappe.reload_doc('core', 'doctype', 'doctype_link', force=True) #2020-10-17", "execute:frappe.reload_doc('core', 'doctype', 'doctype_state', force=True) #2021-12-15", "execute:frappe.reload_doc('core', 'doctype', 'doctype', force=True) #2017-09-22", "execute:frappe.reload_doc('core', 'doctype', 'docfield', force=True) #2018-02-20", 'frappe.patches.v11_0.drop_column_apply_user_permissions', "execute:frappe.reload_doc('core', 'doctype', 'custom_docperm')", "execute:frappe.reload_doc('core', 'doctype', 'docperm') #2018-05-29", "execute:frappe.reload_doc('core', 'doctype', 'comment')", "execute:frappe.reload_doc('core', 'doctype', 'document_naming_rule', force=True)", "execute:frappe.reload_doc('core', 'doctype', 'module_def') #2020-08-28", "execute:frappe.reloa...
+      patch = 'frappe.patches.v10_0.migrate_passwords_passlib'
+      skip_failing = False
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/modules/patch_handler.py", line 62, in run_patch
+    if not run_single(patchmodule=patch):
+      patch = 'frappe.patches.v10_0.migrate_passwords_passlib'
+      skip_failing = False
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/modules/patch_handler.py", line 150, in run_single
+    return execute_patch(patchmodule, method, methodargs)
+      patchmodule = 'frappe.patches.v10_0.migrate_passwords_passlib'
+      method = None
+      methodargs = None
+      force = False
+      conf = <LocalProxy unbound>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/modules/patch_handler.py", line 186, in execute_patch
+    _patch()
+      patchmodule = 'frappe.patches.v10_0.migrate_passwords_passlib'
+      method = None
+      methodargs = None
+      has_patch_file = True
+      patch = 'frappe.patches.v10_0.migrate_passwords_passlib.execute'
+      docstring = ''
+      _patch = <function execute at 0x10fa29900>
+      start_time = 1740259459.695688
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/patches/v10_0/migrate_passwords_passlib.py", line 6, in execute
+    all_auths = frappe.db.sql(
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/database/database.py", line 244, in sql
+    self._cursor.execute(query, values)
+      self = <frappe.database.mariadb.database.MariaDBDatabase object at 0x10f6804c0>
+      query = "SELECT `name`, `password`, `salt` FROM `__Auth`\n\t\tWHERE doctype='User' AND `fieldname`='password'"
+      values = None
+      as_dict = True
+      as_list = 0
+      formatted = 0
+      debug = False
+      ignore_ddl = 0
+      as_utf8 = 0
+      auto_commit = 0
+      update = None
+      explain = False
+      run = True
+      pluck = False
+      as_iterator = False
+      trace_id = None
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/cursors.py", line 153, in execute
+    result = self._query(query)
+      self = <pymysql.cursors.Cursor object at 0x10f78f220>
+      query = "SELECT `name`, `password`, `salt` FROM `__Auth`\n\t\tWHERE doctype='User' AND `fieldname`='password'"
+      args = None
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+      self = <pymysql.cursors.Cursor object at 0x10f78f220>
+      q = "SELECT `name`, `password`, `salt` FROM `__Auth`\n\t\tWHERE doctype='User' AND `fieldname`='password'"
+      conn = <pymysql.connections.Connection object at 0x10f78f160>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+      self = <pymysql.connections.Connection object at 0x10f78f160>
+      sql = b"SELECT `name`, `password`, `salt` FROM `__Auth`\n\t\tWHERE doctype='User' AND `fieldname`='password'"
+      unbuffered = False
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 825, in _read_query_result
+    result.read()
+      self = <pymysql.connections.Connection object at 0x10f78f160>
+      unbuffered = False
+      result = <pymysql.connections.MySQLResult object at 0x10f9cf730>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+      self = <pymysql.connections.MySQLResult object at 0x10f9cf730>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+      self = <pymysql.connections.Connection object at 0x10f78f160>
+      packet_type = <class 'pymysql.protocol.MysqlPacket'>
+      buff = bytearray(b"\xff\x1e\x04#42S22Unknown column \'salt\' in \'SELECT\'")
+      packet_header = b'*\x00\x00\x01'
+      btrl = 42
+      btrh = 0
+      packet_number = 1
+      bytes_to_read = 42
+      recv_data = b"\xff\x1e\x04#42S22Unknown column 'salt' in 'SELECT'"
+      packet = <pymysql.protocol.MysqlPacket object at 0x10fa14b20>
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+      self = <pymysql.protocol.MysqlPacket object at 0x10fa14b20>
+      errno = 1054
+  File "/Users/cosmaskiplagat/DEV/develop/frappe-bench/env/lib/python3.10/site-packages/pymysql/err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+      data = b"\xff\x1e\x04#42S22Unknown column 'salt' in 'SELECT'"
+      errno = 1054
+      errval = "Unknown column 'salt' in 'SELECT'"
+      errorclass = <class 'pymysql.err.OperationalError'>
+pymysql.err.OperationalError: (1054, "Unknown column 'salt' in 'SELECT'")
+Executing frappe.patches.v10_0.migrate_passwords_passlib in kigen.local (_e30b065ce42eccbb)
+Queued rebuilding of search index for kigen.local
+

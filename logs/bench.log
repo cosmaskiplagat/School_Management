@@ -1,0 +1,428 @@
+2025-02-22 20:41:58,335 DEBUG cd frappe-bench && python3 -m venv env
+2025-02-22 20:42:00,439 DEBUG cd frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-22 20:42:02,127 DEBUG cd frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-02-22 20:42:03,120 LOG Getting frappe
+2025-02-22 20:42:03,120 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-02-22 20:42:10,517 LOG Installing frappe
+2025-02-22 20:42:10,517 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-22 20:43:08,990 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-22 20:43:16,116 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-22 20:43:16,310 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2025-02-22 20:43:16,310 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-22 20:43:16,310 DEBUG cd frappe-bench && bench build
+2025-02-22 20:43:16,541 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench build
+2025-02-22 20:43:40,256 LOG setting up backups
+2025-02-22 20:43:43,535 LOG backups were set up
+2025-02-22 20:43:43,536 INFO Bench frappe-bench initialized
+2025-02-22 20:46:26,569 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench start
+2025-02-22 20:46:27,138 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench serve --port 8000
+2025-02-22 20:46:27,157 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench schedule
+2025-02-22 20:46:27,159 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench worker
+2025-02-22 20:46:27,159 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench watch
+2025-02-22 20:49:13,922 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 20:50:07,465 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench list-sites
+2025-02-22 20:50:44,222 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench new-site kigen.local
+2025-02-22 21:01:16,194 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench list-sites
+2025-02-22 21:01:26,072 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench new-site kigen.local
+2025-02-22 21:03:24,776 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench use kigen.local
+2025-02-22 21:03:35,050 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local list-apps
+2025-02-22 21:04:05,215 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench start
+2025-02-22 21:04:05,773 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench serve --port 8000
+2025-02-22 21:04:05,807 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench watch
+2025-02-22 21:04:05,808 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench schedule
+2025-02-22 21:04:05,808 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench worker
+2025-02-22 21:07:58,385 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app erpnext --branch version-14
+2025-02-22 21:08:02,237 LOG Getting erpnext
+2025-02-22 21:08:02,237 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2025-02-22 21:08:09,796 LOG Installing erpnext
+2025-02-22 21:08:09,797 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-22 21:10:04,036 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext  executed with exit code 1
+2025-02-22 21:10:04,038 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app erpnext --branch version-14 executed with exit code 1
+2025-02-22 21:10:04,899 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local install-app erpnext
+2025-02-22 21:20:41,714 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench install-app erpnext
+2025-02-22 21:22:57,512 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench setup requirements
+2025-02-22 21:22:57,518 DEBUG /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-22 21:22:58,452 LOG Installing frappe
+2025-02-22 21:22:58,452 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-22 21:23:46,715 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-22 21:23:47,737 LOG Installing erpnext
+2025-02-22 21:23:47,738 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-22 21:24:02,723 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext  executed with exit code 1
+2025-02-22 21:24:02,723 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench setup requirements executed with exit code 1
+2025-02-22 21:27:18,003 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench start
+2025-02-22 21:27:18,568 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench serve --port 8000
+2025-02-22 21:27:18,580 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench watch
+2025-02-22 21:27:18,589 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench worker
+2025-02-22 21:27:18,590 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench schedule
+2025-02-22 21:30:01,098 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench start
+2025-02-22 21:30:01,670 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench watch
+2025-02-22 21:30:01,674 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench schedule
+2025-02-22 21:30:01,676 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench serve --port 8000
+2025-02-22 21:30:01,677 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench worker
+2025-02-22 21:33:22,168 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 21:33:22,745 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-22 21:33:22,756 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-22 21:33:22,756 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-22 21:33:22,764 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-22 21:36:36,307 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench setup requirements
+2025-02-22 21:36:36,312 DEBUG /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-22 21:36:37,796 LOG Installing frappe
+2025-02-22 21:36:37,797 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-22 21:38:10,287 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-22 21:38:11,323 LOG Installing erpnext
+2025-02-22 21:38:11,323 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-22 21:38:59,878 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-22 21:39:57,533 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench list-apps
+2025-02-22 21:41:22,427 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 21:41:23,010 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-22 21:41:23,011 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-22 21:41:23,023 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-22 21:41:23,025 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-22 21:42:19,880 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-22 21:42:20,104 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-22 21:42:20,306 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2025-02-22 21:42:20,307 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-22 21:42:32,687 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench list-apps
+2025-02-22 21:49:00,267 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-22 21:49:00,489 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-22 21:49:00,687 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 4
+2025-02-22 21:49:00,688 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-22 21:58:52,535 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 21:58:53,134 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-22 21:58:53,156 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-22 21:58:53,157 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-22 21:58:53,157 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-22 21:59:25,927 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 21:59:26,488 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-22 21:59:26,504 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-22 21:59:26,504 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-22 21:59:26,506 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-22 23:01:38,843 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 23:01:39,429 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-22 23:01:39,429 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-22 23:01:39,429 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-22 23:01:39,436 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-22 23:36:29,206 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-22 23:36:29,781 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-22 23:36:29,782 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-22 23:36:29,787 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-22 23:36:29,788 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-23 00:00:01,908 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench --verbose --site all backup
+2025-02-23 00:01:22,390 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app erpnext
+2025-02-23 00:01:31,144 INFO App moved from apps/erpnext to archived/apps/erpnext-2025-02-23
+2025-02-23 00:01:31,192 LOG Getting erpnext
+2025-02-23 00:01:31,192 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2025-02-23 00:01:36,734 LOG Installing erpnext
+2025-02-23 00:01:36,735 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-23 00:01:39,165 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-23 00:01:39,792 DEBUG bench build --app erpnext
+2025-02-23 00:01:40,047 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench build --app erpnext
+2025-02-23 00:01:40,490 WARNING bench build --app erpnext executed with exit code 1
+2025-02-23 00:01:40,491 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app erpnext executed with exit code 1
+2025-02-23 00:02:26,378 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench setup requirements
+2025-02-23 00:02:26,386 DEBUG /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-23 00:02:27,463 LOG Installing frappe
+2025-02-23 00:02:27,464 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-23 00:02:31,373 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-23 00:02:32,507 LOG Installing erpnext
+2025-02-23 00:02:32,507 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-23 00:02:36,141 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-23 00:03:02,321 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench build --app erpnext
+2025-02-23 00:08:29,427 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench version
+2025-02-23 00:08:54,327 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench new-site kigen.local
+2025-02-23 00:12:39,685 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench new-site kigen.local
+2025-02-23 00:13:23,839 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app --branch version-14 frappe https://github.com/frappe/frappe.git
+2025-02-23 00:13:30,240 INFO App moved from apps/frappe to archived/apps/frappe-2025-02-23
+2025-02-23 00:13:30,314 LOG Getting frappe
+2025-02-23 00:13:30,314 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2025-02-23 00:13:34,944 LOG Installing frappe
+2025-02-23 00:13:34,944 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-23 00:14:47,328 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-23 00:15:11,327 DEBUG bench build --app frappe
+2025-02-23 00:15:11,569 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench build --app frappe
+2025-02-23 00:15:13,558 WARNING bench build --app frappe executed with exit code 1
+2025-02-23 00:15:13,559 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app --branch version-14 frappe https://github.com/frappe/frappe.git executed with exit code 1
+2025-02-23 00:15:18,478 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench new-site kigen.local
+2025-02-23 00:16:15,518 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app --branch version-14 erpnext https://github.com/frappe/erpnext.git
+2025-02-23 00:16:19,090 INFO App moved from apps/erpnext to archived/apps/erpnext-2025-02-23_1
+2025-02-23 00:16:19,168 LOG Getting erpnext
+2025-02-23 00:16:19,168 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-14 --depth 1 --origin upstream
+2025-02-23 00:16:26,084 LOG Installing erpnext
+2025-02-23 00:16:26,085 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-23 00:16:34,994 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-23 00:16:35,470 DEBUG bench build --app erpnext
+2025-02-23 00:16:35,685 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench build --app erpnext
+2025-02-23 00:16:43,966 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 00:16:44,163 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 00:16:44,163 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-23 00:16:56,721 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench build
+2025-02-23 00:17:40,039 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench migrate
+2025-02-23 00:18:21,214 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local migrate
+2025-02-23 00:19:46,990 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local migrate
+2025-02-23 00:20:18,199 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 00:20:20,535 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench serve --port 8000
+2025-02-23 00:20:20,565 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench watch
+2025-02-23 00:20:20,566 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench schedule
+2025-02-23 00:20:20,567 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench worker
+2025-02-23 00:22:43,726 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local migrate
+2025-02-23 00:24:18,864 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local migrate
+2025-02-23 00:25:54,878 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local migrate
+2025-02-23 00:26:10,355 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local reload-doc core doctype user
+2025-02-23 00:26:57,062 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local mariadb
+2025-02-23 00:30:18,848 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local migrate
+2025-02-23 00:31:03,527 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 00:31:04,059 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench serve --port 8000
+2025-02-23 00:31:04,061 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench watch
+2025-02-23 00:31:04,081 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench schedule
+2025-02-23 00:31:04,082 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench worker
+2025-02-23 00:32:19,286 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 00:33:19,075 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local mariadb
+2025-02-23 00:35:32,370 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 00:36:48,735 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 00:36:48,988 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 00:36:49,201 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 00:36:49,202 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 00:42:45,411 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 00:42:45,645 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 00:42:45,857 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 00:42:45,857 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 00:43:33,850 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 00:43:34,099 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 00:43:34,312 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 00:43:34,313 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 00:43:40,333 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 00:43:58,793 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local mariadb
+2025-02-23 00:47:16,986 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 09:29:37,163 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 09:30:20,751 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 09:30:21,002 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 09:30:21,217 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 09:30:21,218 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 09:30:39,662 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset
+2025-02-23 09:30:43,608 LOG pulling frappe
+2025-02-23 09:30:43,609 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-14
+2025-02-23 09:30:45,010 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git reset --hard upstream/version-14
+2025-02-23 09:30:45,521 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git reflog expire --all
+2025-02-23 09:30:45,603 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git gc --prune=all
+2025-02-23 09:30:45,994 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-02-23 09:30:46,313 LOG pulling erpnext
+2025-02-23 09:30:46,313 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-14
+2025-02-23 09:30:48,844 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git reset --hard upstream/version-14
+2025-02-23 09:30:49,179 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git reflog expire --all
+2025-02-23 09:30:49,211 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git gc --prune=all
+2025-02-23 09:30:49,606 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && find . -name "*.pyc" -delete
+2025-02-23 09:30:49,670 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-23 09:30:50,770 LOG Installing frappe
+2025-02-23 09:30:50,770 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-23 09:30:53,034 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-23 09:30:58,265 LOG Installing erpnext
+2025-02-23 09:30:58,265 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-23 09:31:00,498 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-23 09:31:01,926 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset executed with exit code 1
+2025-02-23 09:31:44,278 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset --debug
+2025-02-23 09:31:44,285 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset --debug executed with exit code 2
+2025-02-23 09:34:02,472 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench migrate
+2025-02-23 09:34:14,248 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 09:34:14,490 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 09:34:14,700 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 09:34:14,701 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 09:34:15,683 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset
+2025-02-23 09:34:19,188 LOG pulling frappe
+2025-02-23 09:34:19,189 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-14
+2025-02-23 09:34:20,665 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git reset --hard upstream/version-14
+2025-02-23 09:34:20,711 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git reflog expire --all
+2025-02-23 09:34:20,743 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git gc --prune=all
+2025-02-23 09:34:21,119 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-02-23 09:34:21,357 LOG pulling erpnext
+2025-02-23 09:34:21,358 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-14
+2025-02-23 09:34:22,906 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git reset --hard upstream/version-14
+2025-02-23 09:34:22,960 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git reflog expire --all
+2025-02-23 09:34:22,992 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git gc --prune=all
+2025-02-23 09:34:23,367 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && find . -name "*.pyc" -delete
+2025-02-23 09:34:23,427 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-23 09:34:24,470 LOG Installing frappe
+2025-02-23 09:34:24,470 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-23 09:34:26,731 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-23 09:34:31,896 LOG Installing erpnext
+2025-02-23 09:34:31,897 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-23 09:34:33,988 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-23 09:34:35,440 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset executed with exit code 1
+2025-02-23 09:38:05,014 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench drop-site kigen.local --force
+2025-02-23 09:38:14,448 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 09:38:14,693 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 09:38:14,892 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 09:38:14,892 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 09:38:31,337 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench list-sites
+2025-02-23 09:41:28,393 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 09:48:51,805 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 09:51:09,986 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 09:51:10,502 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench serve --port 8000
+2025-02-23 09:51:10,506 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench watch
+2025-02-23 09:51:10,514 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench schedule
+2025-02-23 09:51:10,527 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench worker
+2025-02-23 09:52:21,830 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 09:52:22,344 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench serve --port 8000
+2025-02-23 09:52:22,358 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench watch
+2025-02-23 09:52:22,382 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench schedule
+2025-02-23 09:52:22,382 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench worker
+2025-02-23 09:55:57,099 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench update --reset
+2025-02-23 09:55:59,126 LOG pulling frappe
+2025-02-23 09:55:59,127 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git fetch --depth=1 --no-tags upstream version-14
+2025-02-23 09:56:00,709 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git reset --hard upstream/version-14
+2025-02-23 09:56:00,756 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git reflog expire --all
+2025-02-23 09:56:00,789 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && git gc --prune=all
+2025-02-23 09:56:01,170 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && find . -name "*.pyc" -delete
+2025-02-23 09:56:01,440 LOG pulling erpnext
+2025-02-23 09:56:01,441 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git fetch --depth=1 --no-tags upstream version-14
+2025-02-23 09:56:03,086 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git reset --hard upstream/version-14
+2025-02-23 09:56:03,139 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git reflog expire --all
+2025-02-23 09:56:03,171 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && git gc --prune=all
+2025-02-23 09:56:03,547 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && find . -name "*.pyc" -delete
+2025-02-23 09:56:03,610 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-02-23 09:56:04,566 LOG Installing frappe
+2025-02-23 09:56:04,567 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe 
+2025-02-23 09:56:07,204 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe && yarn install --check-files
+2025-02-23 09:56:12,340 LOG Installing erpnext
+2025-02-23 09:56:12,340 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext 
+2025-02-23 09:56:14,450 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/erpnext && yarn install --check-files
+2025-02-23 09:56:39,119 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench migrate
+2025-02-23 09:57:01,939 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 09:57:31,020 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench use kigen.local
+2025-02-23 09:57:39,098 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench new-site kigen.local
+2025-02-23 09:59:46,465 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench use kigen.local
+2025-02-23 09:59:55,721 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local install-app erpnext
+2025-02-23 10:04:50,428 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local migrate
+2025-02-23 10:05:06,531 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 10:10:23,409 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench use kigen.local
+2025-02-23 10:10:32,288 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 10:12:41,779 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench restart
+2025-02-23 10:12:42,037 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 10:12:42,236 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 10:12:42,236 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench restart executed with exit code 1
+2025-02-23 10:13:10,066 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench restart
+2025-02-23 10:14:31,531 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-23 10:16:32,848 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 10:19:14,773 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 10:19:15,000 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 10:19:15,204 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 10:19:15,204 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 10:19:39,776 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 10:20:59,798 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 11:24:21,828 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 11:24:22,417 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-23 11:24:22,441 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-23 11:24:22,450 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-23 11:24:22,450 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-23 11:32:48,656 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench set-config -g hostname kigen.local
+2025-02-23 11:32:49,165 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench set-config -g webserver_port 8000
+2025-02-23 11:33:05,027 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 11:33:05,259 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 11:33:05,456 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 11:33:05,457 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 11:38:01,777 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 11:38:02,582 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-23 11:38:02,604 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-23 11:38:02,604 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-23 11:38:02,611 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-23 11:50:16,192 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app education
+2025-02-23 11:50:17,077 LOG Getting education
+2025-02-23 11:50:17,078 DEBUG cd ./apps && git clone https://github.com/frappe/education.git  --depth 1 --origin upstream
+2025-02-23 11:50:20,488 LOG Installing education
+2025-02-23 11:50:20,488 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/education 
+2025-02-23 11:50:24,002 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/education && yarn install --check-files
+2025-02-23 11:50:45,071 DEBUG bench build --app education
+2025-02-23 11:50:45,326 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench build --app education
+2025-02-23 11:50:55,936 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 11:50:56,146 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 11:50:56,147 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-23 11:51:07,048 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local install-app education
+2025-02-23 11:51:46,519 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 11:51:46,734 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 11:51:46,928 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 11:51:46,928 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 11:53:18,425 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 11:53:19,020 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-23 11:53:19,021 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-23 11:53:19,021 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-23 11:53:19,046 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-23 12:00:01,370 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench --verbose --site all backup
+2025-02-23 12:37:30,197 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 12:37:30,444 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 12:37:30,642 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 12:37:30,642 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 12:37:41,359 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart
+2025-02-23 12:37:41,573 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-23 12:37:41,767 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-23 12:37:41,767 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench restart executed with exit code 1
+2025-02-23 12:39:36,183 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-23 12:39:36,808 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-23 12:39:36,808 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-23 12:39:36,809 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-23 12:39:36,823 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-24 08:51:45,649 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench console
+2025-02-24 12:00:21,761 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench --verbose --site all backup
+2025-02-24 15:15:46,526 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench make-module Student Portal education
+2025-02-25 11:16:03,816 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local console
+2025-02-25 11:21:12,892 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench start
+2025-02-25 12:00:01,525 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench --verbose --site all backup
+2025-02-25 13:05:40,796 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local console
+2025-02-25 13:20:53,058 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 13:20:53,103 LOG Getting lms
+2025-02-25 13:20:53,103 DEBUG cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream
+2025-02-25 13:21:45,067 WARNING cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream executed with exit code 128
+2025-02-25 13:21:45,069 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench get-app lms https://github.com/frappe/lms.git executed with exit code 1
+2025-02-25 13:34:20,079 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 13:34:20,123 LOG Getting lms
+2025-02-25 13:34:20,124 DEBUG cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream
+2025-02-25 13:34:57,846 WARNING cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream executed with exit code 128
+2025-02-25 13:34:57,847 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git executed with exit code 1
+2025-02-25 14:51:46,722 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 14:51:46,764 LOG Getting lms
+2025-02-25 14:51:46,765 DEBUG cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream
+2025-02-25 14:52:25,623 WARNING cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream executed with exit code 128
+2025-02-25 14:52:25,624 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git executed with exit code 1
+2025-02-25 15:56:38,790 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 15:56:38,836 LOG Getting lms
+2025-02-25 15:56:38,836 DEBUG cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream
+2025-02-25 15:57:09,012 WARNING cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream executed with exit code 128
+2025-02-25 15:57:09,013 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git executed with exit code 1
+2025-02-25 15:58:06,613 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 15:58:06,656 LOG Getting lms
+2025-02-25 15:58:06,656 DEBUG cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream
+2025-02-25 16:01:19,487 WARNING /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git executed with exit code 1
+2025-02-25 16:01:28,513 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 16:01:28,558 LOG Getting lms
+2025-02-25 16:01:28,558 DEBUG cd ./apps && git clone https://github.com/frappe/lms.git  --depth 1 --origin upstream
+2025-02-25 16:01:51,550 LOG Installing lms
+2025-02-25 16:01:51,551 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/lms 
+2025-02-25 16:02:00,678 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/lms && yarn install --check-files
+2025-02-25 16:07:22,950 DEBUG bench build --app lms
+2025-02-25 16:07:23,201 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench build --app lms
+2025-02-25 16:07:47,004 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-25 16:07:47,233 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-25 16:07:47,234 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-25 16:07:59,934 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench get-app lms https://github.com/frappe/lms.git
+2025-02-25 16:08:17,091 LOG Installing lms
+2025-02-25 16:08:17,093 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/lms 
+2025-02-25 16:08:19,431 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/lms && yarn install --check-files
+2025-02-25 16:08:21,363 DEBUG bench build --app lms
+2025-02-25 16:08:21,567 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench build --app lms
+2025-02-25 16:08:44,019 DEBUG cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe:
+2025-02-25 16:08:44,243 WARNING cd /Users/cosmaskiplagat/DEV/develop/frappe-bench && supervisorctl restart frappe: executed with exit code 1
+2025-02-25 16:08:44,244 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-02-25 16:47:27,813 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local install-app lms
+2025-02-25 16:50:04,108 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local install-app lms
+2025-02-25 16:50:39,438 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local list-apps
+2025-02-25 16:51:02,919 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/bench --site kigen.local mariadb
+2025-02-25 16:59:47,892 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench start
+2025-02-25 16:59:48,482 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
+2025-02-25 16:59:48,482 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench watch
+2025-02-25 16:59:48,495 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
+2025-02-25 16:59:48,506 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-26 09:11:41,830 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local list-apps
+2025-02-26 09:12:22,509 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local mariadb
+2025-02-26 09:16:56,594 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local install-app lms
+2025-02-26 09:18:35,443 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local mariadb
+2025-02-26 09:23:19,931 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local install-app lms
+2025-02-26 09:24:05,077 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local mariadb
+2025-02-26 09:24:40,391 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench --site kigen.local install-app lms

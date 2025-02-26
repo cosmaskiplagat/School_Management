@@ -1,0 +1,109 @@
+Backup failed for Site kigen.local. Database or site_config.json may be corrupted
+Traceback with variables (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 868, in backup
+    frappe.init(site)
+      context = CliCtxObj(sites=['kigen.local'], force=False, profile=False, verbose=True)
+      with_files = False
+      backup_path = None
+      backup_path_db = None
+      backup_path_files = None
+      backup_path_private_files = None
+      backup_path_conf = None
+      ignore_backup_conf = False
+      verbose = True
+      compress = False
+      include = ''
+      exclude = ''
+      old_backup_metadata = False
+      scheduled_backup = <function scheduled_backup at 0x110eea560>
+      exit_code = 0
+      rollback_callback = None
+      site = 'kigen.local'
+  File "apps/frappe/frappe/__init__.py", line 301, in init
+    setup_redis_cache_connection()
+      site = 'kigen.local'
+      sites_path = '.'
+      new_site = False
+      force = False
+      site_path = './kigen.local'
+  File "apps/frappe/frappe/__init__.py", line 424, in setup_redis_cache_connection
+    from frappe.utils.redis_wrapper import ClientCache, setup_cache
+  File "apps/frappe/frappe/utils/redis_wrapper.py", line 12, in <module>
+    from redis.commands.search import Search
+      __name__ = 'frappe.utils.redis_wrapper'
+      __doc__ = None
+      __package__ = 'frappe.utils'
+      __loader__ = <_frozen_importlib_external.SourceFileLoader object at 0x110e55ae0>
+      __spec__ = ModuleSpec(name='frappe.utils.redis_wrapper', loader=<_frozen_importlib_external.SourceFileLoader object at 0x110e55ae0>, origin='apps/frappe/frappe/utils/redis_wrapper.py')
+      __file__ = 'apps/frappe/frappe/utils/redis_wrapper.py'
+      __cached__ = 'apps/frappe/frappe/utils/__pycache__/redis_wrapper.cpython-310.pyc'
+      __builtins__ = {'__name__': 'builtins', '__doc__': "Built-in functions, exceptions, and other objects.\n\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.", '__package__': '', '__loader__': <class '_frozen_importlib.BuiltinImporter'>, '__spec__': ModuleSpec(name='builtins', loader=<class '_frozen_importlib.BuiltinImporter'>, origin='built-in'), '__build_class__': <built-in function __build_class__>, '__import__': <built-in function __import__>, 'abs': <built-in function abs>, 'all': <built-in function all>, 'any': <built-in function any>, 'ascii': <built-in function ascii>, 'bin': <built-in function bin>, 'breakpoint': <built-in function breakpoint>, 'callable': <built-in function callable>, 'chr': <built-in function chr>, 'compile': <built-in function compile>, 'delattr': <built-in function delattr>, 'dir': <built-in function dir>, 'divmod': <built-in function divmod>, 'eval': <built-in function eval>, 'exec': <built-in function exec>, 'format': <built-in function format>, ...
+      pickle = <module 'pickle' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/pickle.py'>
+      re = <module 're' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/re.py'>
+      threading = <module 'threading' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/threading.py'>
+      time = <module 'time' (built-in)>
+      typing = <module 'typing' from '/usr/local/Cellar/python@3.10/3.10.16/Frameworks/Python.framework/Versions/3.10/lib/python3.10/typing.py'>
+      namedtuple = <function namedtuple at 0x10afbda20>
+      suppress = <class 'contextlib.suppress'>
+      redis = <module 'redis' from 'env/lib/python3.10/site-packages/redis/__init__.py'>
+builtins.ModuleNotFoundError: No module named 'redis.commands'
+Backup failed for Site kigen.local. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 829, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 190, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 377, in take_dump
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 548, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 509, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 455, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ExecutableNotFound: mysqldump not found in PATH! This is required to take a backup.
+
+Backup failed for Site kigen.local. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 829, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 190, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 377, in take_dump
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 548, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 509, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 455, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ExecutableNotFound: mysqldump not found in PATH! This is required to take a backup.
+
+Backup failed for Site kigen.local. Database or site_config.json may be corrupted
+Traceback (most recent call last):
+  File "apps/frappe/frappe/commands/site.py", line 829, in backup
+    odb = scheduled_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 530, in scheduled_backup
+    odb = new_backup(
+  File "apps/frappe/frappe/utils/backups.py", line 582, in new_backup
+    odb.get_backup(older_than, ignore_files, force=force)
+  File "apps/frappe/frappe/utils/backups.py", line 190, in get_backup
+    self.take_dump()
+  File "apps/frappe/frappe/utils/backups.py", line 377, in take_dump
+    frappe.throw(
+  File "apps/frappe/frappe/__init__.py", line 548, in throw
+    msgprint(
+  File "apps/frappe/frappe/__init__.py", line 509, in msgprint
+    _raise_exception()
+  File "apps/frappe/frappe/__init__.py", line 455, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.ExecutableNotFound: mysqldump not found in PATH! This is required to take a backup.
+
