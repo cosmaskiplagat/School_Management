@@ -1,0 +1,5 @@
+env/
+logs/
+config/pids/
+env/ # Ignore virtual environment
+*.mmdb # Ignore large database files
