@@ -1,0 +1,135 @@
+{
+ "etype": "SessionStopped",
+ "evalue": "SessionStopped('Session Stopped')",
+ "exception": {
+  "args": [
+   40,
+   39,
+   83,
+   101,
+   115,
+   115,
+   105,
+   111,
+   110,
+   32,
+   83,
+   116,
+   111,
+   112,
+   112,
+   101,
+   100,
+   39,
+   44,
+   41
+  ],
+  "http_status_code": [
+   53,
+   48,
+   51
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   83,
+   101,
+   115,
+   115,
+   105,
+   111,
+   110,
+   83,
+   116,
+   111,
+   112,
+   112,
+   101,
+   100,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://kigen.local:8000/api/method/fra...7e78e179dcb08048aac70d33a581f62bd0660b73a' [GET]>)",
+   "dump": {
+    "global init_request": "<function init_request>",
+    "request": "<Request 'http://kigen.local:8000/api/method/fra...7e78e179dcb08048aac70d33a581f62bd0660b73a' [GET]>"
+   },
+   "file": "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "84": "\t\trollback = True",
+    "85": "",
+    "86": "\t\tinit_request(request)",
+    "87": "",
+    "88": "\t\tfrappe.api.validate_auth()"
+   },
+   "lnum": 86
+  },
+  {
+   "call": "(request=<Request 'http://kigen.local:8000/api/method/fra...7e78e179dcb08048aac70d33a581f62bd0660b73a' [GET]>)",
+   "dump": {
+    "frappe. SessionStopped": "<class 'frappe.exceptions.SessionStopped'>",
+    "global frappe": "<module 'frappe' from '/Users/cosmaskiplagat/DEV...lop/frappe-bench/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/app.py",
+   "func": "init_request",
+   "lines": {
+    "163": "\t\t\tsetup_read_only_mode()",
+    "164": "\t\telse:",
+    "165": "\t\t\traise frappe.SessionStopped(\"Session Stopped\")",
+    "166": "\telse:",
+    "167": "\t\tfrappe.connect(set_admin_as_user=False)"
+   },
+   "lnum": 165
+  }
+ ],
+ "locals": {
+  "request": "<Request 'http://kigen.local:8000/api/method/fra...7e78e179dcb08048aac70d33a581f62bd0660b73a' [GET]>",
+  "site": "kigen.local"
+ },
+ "pyver": "Python 3.10.16: /Users/cosmaskiplagat/DEV/develop/frappe-bench/env/bin/python (prefix: /Users/cosmaskiplagat/DEV/develop/frappe-bench/env)",
+ "timestamp": "2025-02-27 10:57:38.870040",
+ "traceback": "Traceback (most recent call last):\n  File \"/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/app.py\", line 86, in application\n    init_request(request)\n  File \"/Users/cosmaskiplagat/DEV/develop/frappe-bench/apps/frappe/frappe/app.py\", line 165, in init_request\n    raise frappe.SessionStopped(\"Session Stopped\")\nfrappe.exceptions.SessionStopped: Session Stopped\n"
+}

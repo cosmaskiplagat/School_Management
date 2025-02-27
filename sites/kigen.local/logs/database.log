@@ -2615,3 +2615,13 @@ ALTER TABLE `tabUser` ADD COLUMN `city` varchar(140)
 ALTER TABLE `tabUser` ADD COLUMN `college` varchar(140)
 2025-02-26 09:25:02,356 WARNING database DDL Query made to DB:
 ALTER TABLE `tabUser` ADD COLUMN `branch` varchar(140)
+2025-02-26 16:55:47,038 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-02-26 16:56:16,738 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-02-26 16:58:46,927 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-02-26 16:59:17,805 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2025-02-27 10:22:50,396 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)

@@ -18,16 +18,6 @@
         "idx": 2,
         "version": "14.83.0"
     },
-    "education": {
-        "is_repo": true,
-        "resolution": {
-            "commit_hash": "e714d9ceef1f0ac7d674c5fce4e4de79d17414c4",
-            "branch": "develop"
-        },
-        "required": [],
-        "idx": 3,
-        "version": "15.5.0"
-    },
     "lms": {
         "is_repo": true,
         "resolution": {
@@ -37,5 +27,15 @@
         "required": [],
         "idx": 4,
         "version": "2.23.0"
+    },
+    "education": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "e714d9ceef1f0ac7d674c5fce4e4de79d17414c4",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "15.5.0"
     }
 }
