@@ -372,3 +372,9 @@ ModuleNotFoundError: No module named 'education'
 2025-02-27 11:24:06,854 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:short
 2025-02-27 11:24:06,862 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:default
 2025-02-27 11:24:06,864 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:long
+2025-02-27 11:51:07,067 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:short
+2025-02-27 11:51:07,074 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:default
+2025-02-27 11:51:07,076 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:long
+2025-02-27 12:18:07,260 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:short
+2025-02-27 12:18:07,267 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:default
+2025-02-27 12:18:07,269 Cleaning registries for queue: Users-cosmaskiplagat-DEV-develop-frappe-bench:long

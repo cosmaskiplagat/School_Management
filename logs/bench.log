@@ -256,3 +256,4 @@
 2025-02-27 10:57:06,033 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench serve --port 8000
 2025-02-27 10:57:06,049 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench schedule
 2025-02-27 10:57:06,052 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-venv/bin/bench worker
+2025-02-27 12:00:03,020 INFO /Users/cosmaskiplagat/DEV/develop/frappe-bench-env/bin/bench --verbose --site all backup
